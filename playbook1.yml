@@ -1,0 +1,14 @@
+---
+- name: create user on all menaged nodes
+  hosts: all
+  tasks:
+    - name: creat a user
+      user:
+        name: namratha
+        password: yesh    
+        uid: 1357
+        shell: /bin/bash
+        comment: "a normal user"
+        home: /etc/namratha
+         
+...
