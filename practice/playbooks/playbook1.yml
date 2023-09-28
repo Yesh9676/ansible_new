@@ -1,0 +1,13 @@
+---
+- name: create user on all managed nodes
+  hostes: all
+  taskes:
+    - name: create a user
+      user:
+        name: namratha
+        passwd: yesh
+        uid: 1357
+        shell: /bin/bash
+        comment: "A normal user"
+        home: /tmp/namratha
+...
